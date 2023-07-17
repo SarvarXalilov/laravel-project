@@ -18,7 +18,7 @@ return new class extends Migration
             $table->integer('user_id')->constrained()->onDelete('cascade');
             $table->text('subject');
             $table->text('message');
-            $table->text('file_url');
+            $table->text('file_url')->nullable();
             $table->timestamps();
         });
     }
